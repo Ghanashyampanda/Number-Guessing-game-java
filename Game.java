@@ -45,14 +45,14 @@ class Play extends JPanel {
 
         gameText = new JLabel("Guess the Number");
         gameText.setForeground(new Color(0, 0, 0));
-        gameText.setFont(new Font("Ink Free", Font.BOLD, 30));
+        gameText.setFont(new Font("MV Boli", Font.BOLD, 30));
         gameText.setBorder(new EmptyBorder(30, 0, 0, 0));
         gameText.setAlignmentX(CENTER_ALIGNMENT);
         add(gameText);
 
         JLabel gameText2 = new JLabel("between 1 and 5");
         gameText2.setForeground(new Color(0, 0, 0));
-        gameText2.setFont(new Font("Ink Free", Font.BOLD, 30));
+        gameText2.setFont(new Font("MV Boli", Font.BOLD, 30));
         gameText2.setBorder(new EmptyBorder(5, 0, 0, 0));
         gameText2.setAlignmentX(CENTER_ALIGNMENT);
         add(gameText2);
@@ -369,7 +369,7 @@ class Menu extends JPanel {
         add(logoImage);
 
         scoreLabel = new JLabel("High Score", JLabel.CENTER);
-        scoreLabel.setFont(new Font("Ink Free", Font.BOLD, 45));
+        scoreLabel.setFont(new Font("MV Boli", Font.BOLD, 45));
         scoreLabel.setForeground(new Color(0, 0, 0));
         scoreLabel.setBorder(new EmptyBorder(85, 0, 0, 0));
         scoreLabel.setAlignmentX(CENTER_ALIGNMENT);
