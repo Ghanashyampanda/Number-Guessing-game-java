@@ -260,29 +260,25 @@ class ScoringSystem {
 class ScoreFiles {
 
     public String showScore(String filename) {
-        String score = "0";
-        try {
-            File text = new File(filename);
-            Scanner scan = new Scanner(text);
-            score = scan.nextLine();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        return score;
+    String score = "0";
+    try (Scanner scan = new Scanner(new File(filename))) {
+        score = scan.nextLine();
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
     }
+    return score;
+}
 
     public String showGames(String filename) {
-        String attempt = "0";
-        try {
-            File text = new File(filename);
-            Scanner scan = new Scanner(text);
-            scan.nextLine();
-            attempt = scan.nextLine();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        return attempt;
+    String attempt = "0";
+    try (Scanner scan = new Scanner(new File(filename))) {
+        scan.nextLine();
+        attempt = scan.nextLine();
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
     }
+    return attempt;
+}
 
     // Convert the showScore method to int
     public int intScore(String filename) {
